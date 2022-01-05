@@ -104,7 +104,7 @@ containers: []
 volumes: []
 volumeMounts: []
 initContainers:
-  name: "initscripts"
+- name: "initscripts"
   image: devops-repo.isus.emc.com:8116/nautilus/zookeeper:0.2.13-208-38a3da8
   command: ['sh', '-c','chown -R 1001:1001 /data /opt']
   securityContext:
